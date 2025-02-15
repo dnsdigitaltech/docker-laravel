@@ -39,3 +39,10 @@ Vai aparece o composer.phar
 ```docker-php-ext-install zip```
 
 ```php composer.phar create-project --prefer-dist laravel/laravel:^7.0 laravel```
+
+```docker build -t develope/laravel:latest ```
+
+```docker run --rm -d --name laravel -p 8000:8000 develope/laravel```
+
+Passando parametro de outra porta para o CMD
+```docker run --rm -d --name laravel -p 8001:8001 develope/laravel --host=0.0.0.0 --port=8001```
